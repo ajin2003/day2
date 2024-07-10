@@ -12,28 +12,28 @@ function createData(name,department,contactno,admissionno) {
 }
 const rows = [
   createData('AVIN','CSE',9067895432,2578),
-  createData('AJIN','ECE',8066578902,5477),
-  createData('GOVIND','ME',9789543672,4786),
+  createData('SHAJAHAN','ECE',8066578902,5477),
+  createData('AMBADI','ME',9789543672,4786),
 ];
 
 const Records = () => {
   return (
     <div>
        <TableContainer  component={Paper}>
-      <Table border='10' sx={{ minWidth: 650,backgroundColor:"blue" }} aria-label="simple table">
+      <Table sx={{ minWidth: 750,backgroundColor:"yellow" }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell><b>NAME</b></TableCell>
             <TableCell align="right"><b>DEPARTMENT&nbsp;</b></TableCell>
-            <TableCell align="right"><b>CONTACT NO</b></TableCell>
-            <TableCell align="right"><b>ADMISSION NO&nbsp;</b></TableCell>
+            <TableCell align="right"><b>CONTACTNO</b></TableCell>
+            <TableCell align="right"><b>ADMISSIONNO&nbsp;</b></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 1 } }}
+              sx={{ 'td,th': { border: 3 } }}
             >
               <TableCell component="th" scope="row">
                 {row.name}

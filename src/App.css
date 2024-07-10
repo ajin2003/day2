@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.app {
+  background-image: url('wall.png');
+  background-repeat: repeat; /* Adjust as needed */
+  background-size: cover; /* Adjust as needed */
+  width: 100vw;
+  height: 100vh;
+}
